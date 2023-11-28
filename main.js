@@ -5,6 +5,7 @@ const nav=document.getElementsByClassName("nav")
 const openedNav=document.getElementById("openedNav")
 
 
+
 for(let i=0;i<headerlinks.length;i++){
    
 headerlinks[i].addEventListener("click",(e)=>{
@@ -56,7 +57,7 @@ if(window.scrollY>1001&window.scrollY<1600){
 
 }
 
-if(window.scrollY>1601&&window.scrollY<2200){
+if(window.scrollY>1601&&window.scrollY<2400){
     for(let i=0;i<headerlinks.length;i++){
         headerlinks[i].classList.remove("active")
          }
@@ -64,7 +65,7 @@ if(window.scrollY>1601&&window.scrollY<2200){
 
 }
 
-if(window.scrollY>2201){
+if(window.scrollY>2401){
     for(let i=0;i<headerlinks.length;i++){
         headerlinks[i].classList.remove("active")
          }
