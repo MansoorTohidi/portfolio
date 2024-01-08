@@ -135,19 +135,34 @@ html,body{
 
 .home-text {
   text-align: justify;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-top: 5rem;
   padding: 5% 4%;
-  width: 500px;
+  width: 400px;
 
 
 }
+.name{
+  color: rgb(0, 89, 255);
+}
 
-.home-text span {
-  color: rgb(0, 110, 255);
-  font-size: 4rem;
+.web {
+  color: rgb(111, 0, 255);
+  font-size: 2rem;
   
 }
+.designer {
+  color: rgb(0, 255, 106);
+  font-size: 2rem;
+  
+}
+
+.developer {
+  color: rgb(255, 0, 106);
+  font-size: 2rem;
+  
+}
+
 
 .home_social a {
   color: rgb(0, 110, 255);
@@ -222,8 +237,6 @@ html,body{
 
 
 /* ---------------skills---------------- */
-
-
 
 
 #skills {
@@ -304,7 +317,7 @@ html,body{
 #projects {
   min-height: 100vh;
   padding-top: 8%;
-
+ 
 }
 
 .total-projects {
@@ -312,18 +325,28 @@ html,body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-}
-
-
-
-.body-projects {
-  width: 90%;
   margin-bottom: 2rem;
+ 
+  padding: 3%;
+  
+
 }
+
+
 
 .header-projects h2 {
   color: var(--color);
+  text-align: center;
+}
+.game-projects-title {
+  margin-top: 4rem;
+  
+}
+
+
+.game-projects{
+  
+  width: 100%;
 }
 
 .links {
@@ -338,27 +361,58 @@ html,body{
 .links a{
   
   border-radius: 10px;
-  width: 40%;
+  width: 45%;
   color: rgb(255, 255, 255);
 }
 
 .live{
   background-color: rgb(255, 0, 0);
 }
+
+.play{
+  background-color: rgba(0, 0, 0, 0.404);
+
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -0.4rem;
+  font-size: 1.8rem;
+  
+}
 .code{
   background-color: rgb(0, 0, 0);
 }
 
 
-.cards {
+.cards{
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-content: center;
   margin-top: 3rem;
   gap: 2rem;
-
+  
+  
 }
+.game-cards{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  place-items: center;
+  margin-top: 3rem;
+  gap: 2rem;
+  
+  margin: auto;
+  margin-top: 40px;
+  
+  
+}
+
+
+
+
 
 .card {
   box-shadow: 2px 2px 2px gray;
@@ -367,28 +421,63 @@ html,body{
   overflow: hidden;
   transition: all 200ms;
   position: relative;
+  
 
 }
-
-
-
+.one{
+background-color: rgb(43, 214, 226);
+}
+.two{
+  background-color: rgb(255, 51, 0);
+  }
+.three{
+    background-color: rgb(211, 43, 226);
+    }
+.four{
+      background-color: rgb(25, 255, 4);
+      }
+.five{
+        background-color: rgb(255, 0, 98);
+        }
+.six{
+          background-color: rgb(23, 43, 110);
+          }
+.seven{
+  
+    background-color: rgb(198, 252, 3);
+    
+}
+.eight{
+  
+  background-color: rgb(5, 120, 228);
+  
+}
+.nine{
+  
+  background-color: rgb(5, 228, 135);
+  
+}
 .card img {
   width: 100%;
   
+}
+.game-card{
+
+  width: 220px;
+  height: 220px;
 
 }
 
-/* .card-name{
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 1rem;
-  color: #fff;
-  width: 100%;
-  background-color: rgb(1, 83, 26);
-} */
+.game-card h2{
+
+ font-size: 1.3rem;
+ color: rgb(17, 17, 17);
+ background-color: azure;
+}
+
+
+
+
 .card-title{
   position: absolute;
   background-color: black;
@@ -682,7 +771,7 @@ font-size: 2rem;
 
 
 
-@media(max-width:680px) {
+@media(max-width:700px) {
 
   .main-home {
     display: flex;
@@ -711,9 +800,11 @@ font-size: 2rem;
 @media(max-width:583px) {
 
   .home-text {
-    
-    font-size: 1.2rem;
-    width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
   
   
   }
